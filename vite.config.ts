@@ -8,9 +8,13 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import { resolve } from 'path' // 编辑器提示 path 模块找不到，可以yarn add @types/node --dev
+import { viteMockServe } from 'vite-plugin-mock'
 
 export default defineConfig({
-  plugins: [vue()],
+  plugins: [
+    vue(),
+    viteMockServe({ supportTs: true })
+  ],
   resolve: {
     alias: {
       '@': resolve(__dirname, 'src') // 设置 `@` 指向 `src` 目录

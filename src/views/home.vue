@@ -1,5 +1,10 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import request from "@/utils/request.ts"
+
+request('/api/getList').then(res=> {
+  console.log(res);
+})
 
 defineProps<{ msg: string }>()
 

@@ -8,7 +8,7 @@ interface ApiConfig {
 async function request(url: string, options: ApiConfig) {
   // 创建 axios 实例
   const service = axios.create({
-    baseURL: "", // api base_url
+    baseURL: "http://localhost:3000", // api base_url
     timeout: 6000 // 请求超时时间
   });
   // 请求拦截
