@@ -12,3 +12,10 @@ npm init @vitejs/app vite-vue3 -- --template vue-ts
 # yarn
 yarn create @vitejs/app vite-vue3 --template vue-ts
 
+
+
+# 运行
+
+# yarn 
+
+# yarn dev
